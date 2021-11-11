@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>list
+    </title>
+</head>
+
+<body>
+    <section>
+        <button onclick="add()"> click
+
+        </button>
+        <ul id='list'>
+
+
+        </ul>
+
+
+    </section>
+    <script>
+        count = +1
+        function add() {
+            console.log('clicked')
+            const list = document.getElementById('list')
+            const li = document.createElement('li')
+            li.append('clicked' + count)
+            list.append(li)
+            count = count + 1// adding one to the old one and saving it 
+        }
+
+
+
+    </script>
+</body>
+
+</html>
